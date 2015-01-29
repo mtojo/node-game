@@ -1,19 +1,17 @@
 {
-    "name": "game"
-  , "version": "0.1.0"
-  , "description": "game"
-  , "private": true
-  , "main": "lib/game.js"
-  , "engines": {
+    "name": "node-game",
+    "version": "0.1.0",
+    "description": "Game loop library for Node.js.",
+    "private": true,
+    "main": "lib/game.js",
+    "engines": {
         "node": ">=0.8.x"
-    }
-  , "dependencies": {
-    }
-  , "devDependencies": {
-        "mocha": "*"
-      , "should": "*"
-    }
-  , "scripts": {
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
+    },
+    "scripts": {
         "test": "mocha --recursive test"
     }
 }

@@ -1,11 +1,11 @@
 var Game = require('../lib/game');
 
-describe('Game', function () {
-  it('Loop', function (done) {
+describe('Game', function() {
+  it('Run loop', function(done) {
     var game = new Game({
-        framesPerSecond: 50
-      , maxFrameSkip: 5
-      , waitTime: 5
+      framesPerSecond: 50,
+      maxFrameSkip: 5,
+      waitTime: 5
     });
 
     game.on('start', function() {
@@ -25,7 +25,6 @@ describe('Game', function () {
 
     game.on('stop', function() {
       this.updateTicks.should.eql(1);
-
       done();
     });
 
