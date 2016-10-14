@@ -1,17 +1,34 @@
 {
-    "name": "node-game",
-    "version": "0.1.0",
-    "description": "Game loop library for Node.js.",
-    "private": true,
-    "main": "lib/game.js",
-    "engines": {
-        "node": ">=0.8.x"
-    },
-    "devDependencies": {
-        "mocha": "*",
-        "should": "*"
-    },
-    "scripts": {
-        "test": "mocha --recursive test"
-    }
+  "name": "game",
+  "description": "Game loop library",
+  "version": "0.1.0",
+  "author": "Masaki Tojo",
+  "bugs": {
+    "url": "https://github.com/mtojo/node-game/issues"
+  },
+  "devDependencies": {
+    "eslint": "~3.7.1",
+    "mocha": "~3.1.2",
+    "power-assert": "~1.4.1"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "homepage": "https://github.com/mtojo/node-game",
+  "keywords": [
+    "random"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mtojo/node-game.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha"
+  }
 }
